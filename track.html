@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindHoops • Track</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="track">
+  <main class="container-narrow">
+    <div class="step-indicator">
+      <span class="step completed">1. Vent</span>
+      <span class="step completed">2. Tip</span>
+      <span class="step completed">3. Reflect</span>
+      <span class="step active">4. Track</span>
+    </div>
+
+    <div class="brand">
+      <div class="logo"><img src="assets/logo.svg" alt=""></div>
+      <h1>Your Progress</h1>
+    </div>
+
+    <section class="cardx">
+      <!-- Ringkasan sesi saat ini -->
+      <div id="currentSummary" class="summary"></div>
+
+      <!-- Perbandingan before-after -->
+      <div id="comparison" class="comparison-box"></div>
+
+      <div class="label">Mood after reflection (1–10)</div>
+      <input id="moodAfter" type="number" min="1" max="10" placeholder="Enter 1–10">
+      <div class="error-message" id="moodError"></div>
+
+      <button id="saveAfterBtn" class="btnx btn-accent">
+        <i class="fas fa-save"></i> Save Mood
+      </button>
+
+      <div id="resultLine" class="small success-message"></div>
+
+      <!-- Grafik riwayat mood -->
+      <div class="history-chart">
+        <div class="label"> <i class="fas fa-chart-line"></i> Your mood trend</div>
+        <div id="chartContainer" class="chart"></div>
+      </div>
+
+      <div class="rowgap">
+        <button id="newSessionBtn" class="btnx btn-danger">
+          <i class="fas fa-redo-alt"></i> New Session
+        </button>
+        <button id="homeBtn" class="btnx btn-ghost">
+          <i class="fas fa-home"></i> Home
+        </button>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <div class="navwrap">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+        <a href="#" id="resetNav"><i class="fas fa-redo-alt"></i> New</a>
+      </div>
+    </nav>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

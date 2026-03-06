@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- MindHoops logo: half basketball + half brain -->
+  <defs>
+    <clipPath id="clipCircle">
+      <circle cx="128" cy="128" r="104"></circle>
+    </clipPath>
+
+    <!-- right half clip -->
+    <clipPath id="clipRight">
+      <rect x="128" y="0" width="128" height="256"></rect>
+    </clipPath>
+
+    <!-- left half clip -->
+    <clipPath id="clipLeft">
+      <rect x="0" y="0" width="128" height="256"></rect>
+    </clipPath>
+  </defs>
+
+  <!-- Outer circle border -->
+  <circle cx="128" cy="128" r="108" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="8"></circle>
+
+  <!-- Inside clipped circle -->
+  <g clip-path="url(#clipCircle)">
+
+    <!-- LEFT: Basketball -->
+    <g clip-path="url(#clipLeft)">
+      <circle cx="128" cy="128" r="104" fill="#ff8a3d"></circle>
+      <!-- Basketball lines -->
+      <path d="M128 24v208" stroke="rgba(20,15,10,0.45)" stroke-width="10" stroke-linecap="round"></path>
+      <path d="M24 128h208" stroke="rgba(20,15,10,0.45)" stroke-width="10" stroke-linecap="round"></path>
+      <path d="M52 52c42 28 66 70 66 76s-24 48-66 76" fill="none" stroke="rgba(20,15,10,0.45)" stroke-width="10" stroke-linecap="round"></path>
+      <path d="M204 52c-42 28-66 70-66 76s24 48 66 76" fill="none" stroke="rgba(20,15,10,0.45)" stroke-width="10" stroke-linecap="round"></path>
+    </g>
+
+    <!-- RIGHT: Brain outline -->
+    <g clip-path="url(#clipRight)">
+      <!-- dark right background so brain pops like sketch -->
+      <circle cx="128" cy="128" r="104" fill="#111823"></circle>
+
+      <!-- Brain outline (simple, clean) -->
+      <path d="M164 76
+               c14 0 26 10 26 24
+               c0 6-2 10-5 14
+               c8 3 13 11 13 20
+               c0 12-9 22-21 23
+               c1 3 2 7 2 10
+               c0 14-11 25-25 25
+               c-7 0-13-2-17-6
+               c-4 4-10 6-17 6
+               c-14 0-25-11-25-25
+               c0-3 1-7 2-10
+               c-12-1-21-11-21-23
+               c0-9 5-17 13-20
+               c-3-4-5-8-5-14
+               c0-14 12-24 26-24
+               c6 0 12 2 16 6
+               c4-4 10-6 16-6
+               z" fill="none" stroke="#eaf0ff" stroke-width="10" stroke-linejoin="round"></path>
+
+      <!-- small brain “fold” lines -->
+      <path d="M124 92c-10 8-10 18 0 26" fill="none" stroke="rgba(234,240,255,0.6)" stroke-width="6" stroke-linecap="round"></path>
+      <path d="M156 100c8 8 8 16 0 24" fill="none" stroke="rgba(234,240,255,0.6)" stroke-width="6" stroke-linecap="round"></path>
+      <path d="M112 140c-10 8-10 18 0 26" fill="none" stroke="rgba(234,240,255,0.6)" stroke-width="6" stroke-linecap="round"></path>
+    </g>
+
+  </g>
+</svg>

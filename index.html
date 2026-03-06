@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindHoops • Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+  <main class="container-narrow">
+    <!-- Brand & Logo -->
+    <div class="brand">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="MindHoops logo">
+      </div>
+      <h1>MindHoops</h1>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Slam Dunk Your Feelings</h2>
+      <p>It’s okay to miss shots. Reset your mindset after every game.</p>
+    </section>
+
+    <!-- Step Cards -->
+    <section class="cardx">
+      <div class="label"> <i class="fas fa-basketball-ball"></i> How It Works</div>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span> Vent your emotions</div>
+        <div class="step"><span class="step-num">2</span> Get a bounce-back tip</div>
+        <div class="step"><span class="step-num">3</span> Reflect & rate</div>
+        <div class="step"><span class="step-num">4</span> Track your progress</div>
+      </div>
+
+      <!-- Statistik Sesi -->
+      <div class="session-stats" id="sessionStats"></div>
+
+      <button id="startBtn" class="btnx btn-accent">
+        <i class="fas fa-play"></i> Start Reflection
+      </button>
+
+      <div class="footer-safe">
+        <i class="fas fa-lock"></i> <b>Privacy:</b> Your data stays on this device.
+      </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <div class="navwrap">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+        <a href="#" id="resetNav"><i class="fas fa-redo-alt"></i> New</a>
+      </div>
+    </nav>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindHoops • Vent</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="vent">
+  <main class="container-narrow">
+    <!-- Step indicator -->
+    <div class="step-indicator">
+      <span class="step active">1. Vent</span>
+      <span class="step">2. Tip</span>
+      <span class="step">3. Reflect</span>
+      <span class="step">4. Track</span>
+    </div>
+
+    <div class="brand">
+      <div class="logo"><img src="assets/logo.svg" alt=""></div>
+      <h1>Vent & Release</h1>
+    </div>
+
+    <section class="cardx">
+      <div class="label"> <i class="fas fa-comment-dots"></i> What’s bothering you?</div>
+      <p class="small">Write freely. This won’t be shared.</p>
+
+      <textarea id="ventBox" placeholder="Example: I missed a wide-open layup… Coach benched me… I felt embarrassed…"></textarea>
+
+      <div class="error-message" id="ventError"></div>
+
+      <button id="releaseBtn" class="btnx btn-accent">
+        <i class="fas fa-paper-plane"></i> Release
+      </button>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <div class="navwrap">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+        <a href="#" id="resetNav"><i class="fas fa-redo-alt"></i> New</a>
+      </div>
+    </nav>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

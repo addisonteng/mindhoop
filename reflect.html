@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindHoops • Reflect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="reflect">
+  <main class="container-narrow">
+    <div class="step-indicator">
+      <span class="step completed">1. Vent</span>
+      <span class="step completed">2. Tip</span>
+      <span class="step active">3. Reflect</span>
+      <span class="step">4. Track</span>
+    </div>
+
+    <div class="brand">
+      <div class="logo"><img src="assets/logo.svg" alt=""></div>
+      <h1>Quick Reflection</h1>
+    </div>
+
+    <section class="cardx">
+      <div class="label">1) How strong was your feeling?</div>
+      <div class="pills">
+        <button class="pill" data-value="1">1</button>
+        <button class="pill" data-value="2">2</button>
+        <button class="pill" data-value="3">3</button>
+        <button class="pill" data-value="4">4</button>
+        <button class="pill" data-value="5">5</button>
+      </div>
+      <div class="error-message" id="strengthError"></div>
+
+      <hr class="sep">
+
+      <div class="label">2) What hurt the most?</div>
+      <div class="options">
+        <label><input type="radio" name="hurtMost" value="Missed shot"> <i class="fas fa-times-circle"></i> Missed shot</label>
+        <label><input type="radio" name="hurtMost" value="Coach feedback"> <i class="fas fa-chalkboard-teacher"></i> Coach feedback</label>
+        <label><input type="radio" name="hurtMost" value="Team mistake"> <i class="fas fa-users"></i> Team mistake</label>
+        <label><input type="radio" name="hurtMost" value="Turnover"> <i class="fas fa-exchange-alt"></i> Turnover</label>
+        <label><input type="radio" name="hurtMost" value="Other"> <i class="fas fa-ellipsis-h"></i> Other</label>
+      </div>
+      <div class="error-message" id="hurtError"></div>
+
+      <hr class="sep">
+
+      <div class="label">3) One positive thing from today?</div>
+      <input id="positiveOne" type="text" placeholder="Contoh: I still hustled on defense.">
+      <div class="error-message" id="positiveError"></div>
+
+      <button id="finishBtn" class="btnx btn-accent">
+        <i class="fas fa-check"></i> Finish Reflection
+      </button>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar-bottom">
+      <div class="navwrap">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+        <a href="#" id="resetNav"><i class="fas fa-redo-alt"></i> New</a>
+      </div>
+    </nav>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
